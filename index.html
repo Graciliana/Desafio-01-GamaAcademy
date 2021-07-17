@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio 1 - </title>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <title>Bike Sempre</title>
+    </head>
+
 </head>
 <body>
-    
+    <div class="logo">
+     <h1>Bike Sempre!</h1>       
+    </div>
+
+    <div class="menu">       
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news"><b>Promoção</b></a></li>
+            <li><a href="#contact"><b>Produtos</b></a></li>
+            <li><a href="#about"><b>Cadastro</b></a></li>
+        </ul>
+    </div>
+
+<!--carousel--> 
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/pngaaa.com-1235152.png" alt="black-friday" width="1100" height="500">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="assets/bike_natureza-2.jpg" alt="bike e a natureza"  width="1100" height="500">
+                <div class="carousel-caption">
+                    <h1>Bike Sempre</h1>
+                    <h3>Explorando o Mundo!</h3>
+                  </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="assets/frete-gratis.jpg" alt="frete gratis para todo brasil" width="1100" height="500">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+         
+          </div>
+
+        
+        </div>
+        <!-- This is to mobile  -->
+        <div class="buttonContainer opacity-responsive">
+            <a href="#logo-target" class="button">Home</a>
+            <a href="#ofert" class="button">Produtos</a>
+            <a href="#emails" class="button">Cadastro</a>
+       </div>
+
+       <!-- Itens -->
+       <h1 class="sub-title">Preços imbativeis! </h1>
+       <div id="ofert" class="oferts">
+            <div class="product-card">
+                <img class="oferts-img" src="./assets/produts/bikeScale930jpg-removebg-preview.png" alt="Bicicleta Scott Scale">
+                <div class="oferts-about">
+                    <h2>Bicicleta Scott Scale 930 2021</h2>
+                    <h3>R$ 20.999,00</h3>
+                    <br>
+                    <button type="button" class="btn btn-warning">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="oferts-img" src="./assets/produts/bikeSpark970-removebg-preview.png" alt="bikeSpark970">
+                <div class="oferts-about">
+                    <h2>Bicicleta Scott Spark 970 2021</h2>
+                    <h3>R$ 19.999,00</h3>
+                    <br>
+                    <button type="button" class="btn btn-warning">Comprar</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="oferts-img" src="./assets/produts/Cannondale.png" alt="Celular">
+                <div class="oferts-about">
+                    <h2>Bicicleta Cannondale Synapse Carbon Disc Ultegra 2021</h2>
+                    <h3>R$ 28.499,00</h3>
+                    <br>
+                    <button type="button" class="btn btn-warning">Comprar</button>
+                </div>
+            </div>
+           
+
+       </div>
+       <hr>
+       <!-- Promotional Email -->
+       <h1 class="email-title">Cadastre-se para receber novidades e promoções!</h1>
+       <div class="customer-container">
+           <div id="emails" class="inputs">
+                <h2>Email</h2>
+                <input class="email-input" placeholder="Email" type="email">
+                
+                <button class="email-button" onclick="newCustomer()">Inscrever-se</button>
+           </div>
+       </div>  
+
+       <footer>
+        &copy; Developed by <a class="github" href="https://github.com/Graciliana">Graciliana Kascher</a>
+    </footer>
+
+<script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
